@@ -6,7 +6,7 @@
 
 A text classification project that predicts the sentiment (positive/negative) of input text using the **IMDb reviews** dataset.
 
-Results
+**Results**
 
 | # | Approach | Accuracy |
 |---|----------|----------|
@@ -18,7 +18,7 @@ Results
 | 6 | distilroberta-base | 76.0% |
 | 7 | roberta-base | 69.1% |
 
-Libraries
+**Libraries**
 
 `matplotlib` `numpy` `scikit-learn` `scipy` `torch` `transformers`
 
@@ -30,8 +30,9 @@ An exploratory NLP notebook using HuggingFace Transformers to study how sentimen
 and language models behave across different contexts and geographies.
 
 **Results analysis**
+
 Qualitative discussion of model failures and biases observed across all experiments.
 
-Libraries
+**Libraries**
 
 `transformers` `torch` `plotly` `pandas`
