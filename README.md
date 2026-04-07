@@ -24,7 +24,7 @@ Libraries
 
 
 
-## Sentiment Analysis Experiments (`sentiment-analysis`)
+## Sentiment Analysis Experiments (`sentiment-analysis/`)
 
 An exploratory NLP notebook using HuggingFace Transformers to study how sentiment models
 and language models behave across different contexts and geographies.
