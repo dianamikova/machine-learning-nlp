@@ -1,4 +1,4 @@
-**A collection of machine learning projects with a focus on Natural Language Processing (NLP), implemented in Python.**
+*A collection of machine learning projects with a focus on Natural Language Processing (NLP), implemented in Python.*
 
 ## Projects
 
