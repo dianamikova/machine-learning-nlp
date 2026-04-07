@@ -51,5 +51,5 @@ more or less natural to the model.
 **5. Results analysis**
 Qualitative discussion of model failures and biases observed across all experiments.
 
-**Libraries
+**6. Libraries
 `transformers` `torch` `plotly` `pandas`
