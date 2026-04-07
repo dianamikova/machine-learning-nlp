@@ -1,4 +1,5 @@
 Model Architecture
+
 The SentimentClassifier class loads a pre-trained encoder using AutoModel.from pretrained()
 following the HuggingFace AutoModels API. A custom classifier head (nn.Linear) is
 added on top of the frozen encoder, as the assignment requires the classifier to be designed
@@ -11,6 +12,7 @@ not overfit, which is why validation accuracy consistently matched or exceeded t
 accuracy throughout training.
 
 Sequence Length
+
 Initially avg len=253 was used (average review length + 20 token buffer). After ob-
 serving slow training and high initial loss, the value was reduced to 186, cutting ap-
 proximately 26 % of tokens. This reduces attention computation by approximately 54
@@ -19,6 +21,7 @@ decision is that the beginning of a review usually contains enough sentiment sig
 determine polarity - readers typically establish their opinion early.
 
 Results
+
 The monolingual BERT outperforms its multilingual counterpart by 13.4%, which is ex-
 pected since the multilingual model distributes its capacity across 104 languages, resulting
 in weaker English-specific representations. Notably, distilroberta-base outperforms
