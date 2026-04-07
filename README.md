@@ -18,7 +18,7 @@ Results
 | 6 | distilroberta-base | 76.0% |
 | 7 | roberta-base | 69.1% |
 
-Libraries & Tools
+Libraries
 
 `matplotlib` `numpy` `scikit-learn` `scipy` `torch` `transformers`
 
@@ -51,5 +51,6 @@ more or less natural to the model.
 **5. Results analysis**
 Qualitative discussion of model failures and biases observed across all experiments.
 
-**6. Libraries
+Libraries
+
 `transformers` `torch` `plotly` `pandas`
