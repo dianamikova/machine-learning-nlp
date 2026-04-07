@@ -2,11 +2,11 @@
 
 ## Projects
 
-### 📊 Sentiment Classification (`sentiment-classification/`)
+### 1. Sentiment Classification (`sentiment-classification/`)
 
 A text classification project that predicts the sentiment (positive/negative) of input text using the **IMDb reviews** dataset.
 
-## Results
+Results
 
 | # | Approach | Accuracy |
 |---|----------|----------|
@@ -18,6 +18,6 @@ A text classification project that predicts the sentiment (positive/negative) of
 | 6 | distilroberta-base | 76.0% |
 | 7 | roberta-base | 69.1% |
 
-## Libraries & Tools
+Libraries & Tools
 
 `matplotlib` `numpy` `scikit-learn` `scipy` `torch` `transformers`
