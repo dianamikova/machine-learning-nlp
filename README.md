@@ -29,9 +29,7 @@ Libraries
 *An exploratory NLP notebook using HuggingFace Transformers to study how sentiment models
 and language models behave across different contexts and geographies.*
 
-Results analysis
-
-Qualitative discussion of model failures and biases observed across all experiments.
+Results analysis: Qualitative discussion of model failures and biases observed across all experiments.
 
 Libraries
 
