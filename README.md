@@ -4,9 +4,9 @@
 
 ### Sentiment Classification (`sentiment-classification/`)
 
-A text classification project that predicts the sentiment (positive/negative) of input text using the **IMDb reviews** dataset.
+*A text classification project that predicts the sentiment (positive/negative) of input text using the **IMDb reviews** dataset.*
 
-**Results**
+Results
 
 | # | Approach | Accuracy |
 |---|----------|----------|
@@ -18,7 +18,7 @@ A text classification project that predicts the sentiment (positive/negative) of
 | 6 | distilroberta-base | 76.0% |
 | 7 | roberta-base | 69.1% |
 
-**Libraries**
+Libraries
 
 `matplotlib` `numpy` `scikit-learn` `scipy` `torch` `transformers`
 
@@ -26,13 +26,13 @@ A text classification project that predicts the sentiment (positive/negative) of
 
 ## Sentiment Analysis Experiments (`sentiment-analysis/`)
 
-An exploratory NLP notebook using HuggingFace Transformers to study how sentiment models
-and language models behave across different contexts and geographies.
+*An exploratory NLP notebook using HuggingFace Transformers to study how sentiment models
+and language models behave across different contexts and geographies.*
 
-**Results analysis**
+Results analysis
 
 Qualitative discussion of model failures and biases observed across all experiments.
 
-**Libraries**
+Libraries
 
 `transformers` `torch` `plotly` `pandas`
