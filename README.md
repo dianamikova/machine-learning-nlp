@@ -1,6 +1,17 @@
 *A collection of machine learning projects with a focus on Natural Language Processing (NLP), implemented in Python.*
 
-## Projects
+
+## Sentiment Analysis Experiments (`sentiment-analysis/`)
+
+*An exploratory NLP notebook using HuggingFace Transformers to study how sentiment models
+and language models behave across different contexts and geographies.*
+
+Results analysis: Qualitative discussion of model failures and biases observed across all experiments.
+
+Libraries
+
+`transformers` `torch` `plotly` `pandas`
+
 
 ## Sentiment Classification (`sentiment-classification/`)
 
@@ -22,17 +33,3 @@ Libraries
 
 `matplotlib` `numpy` `scikit-learn` `scipy` `torch` `transformers`
 
-
-
-
-
-## Sentiment Analysis Experiments (`sentiment-analysis/`)
-
-*An exploratory NLP notebook using HuggingFace Transformers to study how sentiment models
-and language models behave across different contexts and geographies.*
-
-Results analysis: Qualitative discussion of model failures and biases observed across all experiments.
-
-Libraries
-
-`transformers` `torch` `plotly` `pandas`
