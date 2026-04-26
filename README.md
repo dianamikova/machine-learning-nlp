@@ -2,7 +2,7 @@
 
 ## Projects
 
-### Sentiment Classification (`sentiment-classification/`)
+## Sentiment Classification (`sentiment-classification/`)
 
 *A text classification project that predicts the sentiment (positive/negative) of input text using the **IMDb reviews** dataset.*
 
