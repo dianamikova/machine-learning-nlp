@@ -33,3 +33,7 @@ Libraries
 
 `matplotlib` `numpy` `scikit-learn` `scipy` `torch` `transformers`
 
+## Evaluating and Extending an RNN based Part-of-Speech Tagger
+
+
+
