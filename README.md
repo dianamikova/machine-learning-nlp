@@ -51,33 +51,7 @@ Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each 
 | 5 | BiLSTM (no dropout) | 87.6% |
 | 6 | BiLSTM + dropout 0.3 | 88.5% ✅ |
 
-
-## Cross-language (Baseline vs. BiLSTM + dropout 0.3)
-| # | Treebank (lang / genre) | Baseline | BiLSTM |
-|---|-------------------------|----------|--------|
-| 1 | en_ewt (Eng / web) | 86.4% | 91.8% |
-| 2 | en_gum (Eng / mixed) | 86.3% | 92.2% |
-| 3 | en_lines (Eng / literary) | 88.2% | 93.2% |
-| 4 | sv_talbanken (Swe / news) | 87.5% | 92.1% |
-| 5 | sv_lines (Swe / literary) | 87.1% | 91.3% |
-| 6 | da_ddt (Dan / news) | 85.9% | 89.9% |
-| 7 | fi_tdt (Fin / news) | 87.6% | 87.4% |
-| 8 | fi_ftb (Fin / grammar) | 82.5% | 83.6% |
-| 9 | cs_cac (Cze / news) | 92.4% | 94.2% |
-| 10 | cs_fictree (Cze / fiction) | 86.8% | 93.4% |
-| 11 | ro_rrt (Rom / news) | 90.7% | 93.8% |
-
-BiLSTM beats the baseline on 10 of 11 (Finnish fi_tdt the lone exception).
-
-## Key ablations
-| Experiment | Finding |
-|-----------|---------|
-| LSTM vs. GRU | Roughly tied (e.g. Eng 84.8 / 84.1) |
-| Bidirectionality | Big gains (Eng 84.9 → 88.7) except Finnish |
-| Dropout | Best at 0.3 (88.5% test) |
-| Augmentation | *Hurts* English, *helps* Finnish (high OOV) |
-| Model complexity | 64.7% → 84.0% then diminishing returns |
-| UPOS vs XPOS | Finer tagsets much harder (Czech 92.9% → 82.1%, 1176 tags) |
+*BiLSTM + dropout 0.3* beats the baseline on 10 of 11 (Finnish fi_tdt the lone exception).
 
 ## Libraries
 `matplotlib` `numpy` `scikit-learn` `torch` `tqdm`
