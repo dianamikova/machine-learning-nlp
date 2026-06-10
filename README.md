@@ -1,7 +1,7 @@
 *A collection of machine learning projects with a focus on Natural Language Processing (NLP), implemented in Python.*
 
 
-## Sentiment Analysis Experiments (`sentiment-analysis/`)
+# Sentiment Analysis Experiments (`sentiment-analysis/`)
 
 *An exploratory NLP notebook using HuggingFace Transformers to study how sentiment models
 and language models behave across different contexts and geographies.*
@@ -13,7 +13,7 @@ Libraries
 `transformers` `torch` `plotly` `pandas`
 
 
-## Sentiment Classification (`sentiment-classification/`)
+# Sentiment Classification (`sentiment-classification/`)
 
 *A text classification project that predicts the sentiment (positive/negative) of input text using the **IMDb reviews** dataset.*
 
@@ -33,7 +33,7 @@ Libraries
 
 `matplotlib` `numpy` `scikit-learn` `scipy` `torch` `transformers`
 
-## Evaluating and Extending an RNN based Part-of-Speech Tagger
+# Evaluating and Extending an RNN based Part-of-Speech Tagger
 
 An RNN-based part-of-speech tagger evaluated and extended across 11 Universal Dependencies treebanks in 7 languages (English, Swedish, Danish, Finnish, Czech, Romanian). 
 The base RNN is refactored into a scikit-learn–style RNNPosTagger class, then extended with GRU cells, bidirectionality, dropout, and token-masking augmentation. 
@@ -54,7 +54,7 @@ Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each 
 | 5 | BiLSTM + dropout 0.3 | 88.5% |
 | 6 | BiLSTM (no dropout) | 88.7% ✅ |
 
-# Cross-language (Baseline vs. BiLSTM + dropout 0.3)
+## Cross-language (Baseline vs. BiLSTM + dropout 0.3)
 
 | # | Treebank (lang / genre) | Baseline | BiLSTM |
 |---|-------------------------|----------|--------|
@@ -72,7 +72,7 @@ Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each 
 
 BiLSTM beats the baseline on 10 of 11 (Finnish fi_tdt the lone exception).
 
-# Key ablations
+## Key ablations
 
 | Experiment | Finding |
 |-----------|---------|
