@@ -37,9 +37,12 @@ Libraries
 
 An RNN-based part-of-speech tagger evaluated and extended across 11 Universal Dependencies treebanks in 7 languages (English, Swedish, Danish, Finnish, Czech, Romanian). 
 The base RNN is refactored into a scikit-learn–style RNNPosTagger class, then extended with GRU cells, bidirectionality, dropout, and token-masking augmentation. 
+
 Best config: **BiLSTM, dropout = 0.3.**
+
 **Baseline** = *per-token majority*: predict each word's most frequent training tag (lowercased), falling back to the global most-frequent tag for unseen words. 
 Purely lexical, no context — already strong because most words are unambiguous.
+
 Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each word is tagged with its part of speech.
 
 | # | Approach | Accuracy |
