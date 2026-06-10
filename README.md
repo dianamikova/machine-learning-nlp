@@ -38,12 +38,9 @@ Libraries
 An RNN-based part-of-speech tagger evaluated and extended across 11 Universal Dependencies treebanks in 7 languages (English, Swedish, Danish, Finnish, Czech, Romanian). 
 The base RNN is refactored into a scikit-learn–style RNNPosTagger class, then extended with GRU cells, bidirectionality, dropout, and token-masking augmentation. 
 Best config: **BiLSTM, dropout = 0.3.**
-
 **Baseline** = *per-token majority*: predict each word's most frequent training tag (lowercased), falling back to the global most-frequent tag for unseen words. 
 Purely lexical, no context — already strong because most words are unambiguous.
-
 Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each word is tagged with its part of speech.
-
 
 | # | Approach | Accuracy |
 |---|----------|----------|
@@ -51,11 +48,11 @@ Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each 
 | 2 | GRU (unidirectional) | 84.1% |
 | 3 | LSTM (unidirectional) | 84.8% |
 | 4 | Per-token majority baseline | 86.4% |
-| 5 | BiLSTM + dropout 0.3 | 88.5% |
-| 6 | BiLSTM (no dropout) | 88.7% ✅ |
+| 5 | BiLSTM (no dropout) | 87.6% |
+| 6 | BiLSTM + dropout 0.3 | 88.5% ✅ |
+
 
 ## Cross-language (Baseline vs. BiLSTM + dropout 0.3)
-
 | # | Treebank (lang / genre) | Baseline | BiLSTM |
 |---|-------------------------|----------|--------|
 | 1 | en_ewt (Eng / web) | 86.4% | 91.8% |
@@ -69,11 +66,9 @@ Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each 
 | 9 | cs_cac (Cze / news) | 92.4% | 94.2% |
 | 10 | cs_fictree (Cze / fiction) | 86.8% | 93.4% |
 | 11 | ro_rrt (Rom / news) | 90.7% | 93.8% |
-
 BiLSTM beats the baseline on 10 of 11 (Finnish fi_tdt the lone exception).
 
 ## Key ablations
-
 | Experiment | Finding |
 |-----------|---------|
 | LSTM vs. GRU | Roughly tied (e.g. Eng 84.8 / 84.1) |
@@ -84,6 +79,5 @@ BiLSTM beats the baseline on 10 of 11 (Finnish fi_tdt the lone exception).
 | UPOS vs XPOS | Finer tagsets much harder (Czech 92.9% → 82.1%, 1176 tags) |
 
 ## Libraries
-
 `matplotlib` `numpy` `scikit-learn` `torch` `tqdm`
 
