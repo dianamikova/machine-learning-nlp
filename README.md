@@ -54,7 +54,7 @@ Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each 
 | 5 | BiLSTM (no dropout) | 87.6% |
 | 6 | BiLSTM + dropout 0.3 | 88.5% ✅ |
 
-*BiLSTM + dropout 0.3* beats the baseline on 10 of 11 (Finnish fi_tdt the lone exception).
+The BiLSTM (dropout 0.3) outperforms the per-token baseline on 10 of 11 treebanks; only on Finnish fi_tdt does the baseline edge it out (87.6% vs. 87.4%).
 
 ## Libraries
 `matplotlib` `numpy` `scikit-learn` `torch` `tqdm`
