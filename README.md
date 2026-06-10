@@ -66,6 +66,7 @@ Dataset: Universal Dependencies (UD) treebanks — annotated corpora where each 
 | 9 | cs_cac (Cze / news) | 92.4% | 94.2% |
 | 10 | cs_fictree (Cze / fiction) | 86.8% | 93.4% |
 | 11 | ro_rrt (Rom / news) | 90.7% | 93.8% |
+
 BiLSTM beats the baseline on 10 of 11 (Finnish fi_tdt the lone exception).
 
 ## Key ablations
